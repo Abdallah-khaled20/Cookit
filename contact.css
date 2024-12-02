@@ -1,0 +1,169 @@
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: #FAFAFA;
+  box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 80px; 
+}
+nav{
+  margin-right: 5px;
+}
+nav .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+      width: 95%;
+  }
+
+  nav .nav-links {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  nav .nav-links li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+  nav .nav-links li a{
+      padding: 10px 15px;
+  }
+
+  .logo img {
+      height: 30px; 
+  }
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .contact-section h1 {
+    color: #333;
+  }
+  
+  .contact-section p {
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #FAFAFA;
+    color: black;
+    padding: 20px 0;
+    width: 90%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-item {
+    margin: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+@media screen and (max-width: 768px) {
+    footer{
+        width: 95%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+
+    .footer-item p {
+        margin: 5px 0;
+    }
+}

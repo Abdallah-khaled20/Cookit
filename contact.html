@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Image/chef-hat.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out to us using the form below.</p>
+      
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+        <div class="footer-item">
+            <p>&copy; 2024</p>
+        </div>
+        <div class="footer-item">
+            <p>Created by Abdullah Khaled</p>
+        </div>
+        <div class="footer-item social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./Image/f-icon.png" alt="Facebook" class="social-icon" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./Image/X-icon.png" alt="Twitter" class="social-icon" />
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="./Image/in-icon.png" alt="LinkedIn" class="social-icon" />
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Image/chef-hat.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="header">
+      <h1>Recipes</h1>
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vegan">Vegan</button>
+        <button class="filter-btn" data-filter="gluten-free">Gluten-Free</button>
+        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+        <button class="filter-btn" data-filter="dairy-free">Dairy-Free</button>
+        <button id="clear-filters">Clear Filters</button>
+        <input type="text" id="search" placeholder="Search recipes...">
+      </div>
+    </div>
+
+    <main>
+      <div class="recipe-grid" id="recipeGrid">
+       
+      </div>
+    </main>
+  </div>
+
+<div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="" />
+      <p id="modalDescription"></p>
+      <p id="modalDietaryInfo"></p>
+      <p><strong>Preparation Time:</strong> <span id="modalPrepTime"></span></p>
+  
+      <h3>Ingredients:</h3>
+      <ul id="modalIngredients"></ul>
+  
+      <h3>Instructions:</h3>
+      <ol id="modalInstructions"></ol>
+  
+      <p><strong>Notes:</strong> <span id="modalNotes"></span></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-item">
+            <p>&copy; 2024</p>
+        </div>
+        <div class="footer-item">
+            <p>Created by Abdullah Khaled</p>
+        </div>
+        <div class="footer-item social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./Image/f-icon.png" alt="Facebook" class="social-icon" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./Image/X-icon.png" alt="Twitter" class="social-icon" />
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="./Image/in-icon.png" alt="LinkedIn" class="social-icon" />
+            </a>
+        </div>
+    </div>
+</footer>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
